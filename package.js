@@ -1,6 +1,6 @@
 Package.describe({
   name: 'xvendo:tagit',
-  version: '1.0.1',
+  version: '1.0.2',
   // Brief, one-line summary of the package.
   summary: 'Implements tagit JQUERY Plugin',
   // URL to the Git repository containing the source code for this package.
@@ -12,7 +12,6 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
-  api.use('ecmascript');
   api.use(['jquery','mizzao:jquery-ui@1.11.4'],'client');
   api.addFiles(['lib/js/tag-it.min.js', 'lib/css/jquery.tagit.css'], 'client');  
 });
